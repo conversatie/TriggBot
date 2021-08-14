@@ -10,11 +10,3 @@ DB = pymysql.connect(host='localhost',
                              user='root',
                              port='',
                              password='')
- 
-# Simulate the CREATE DATABASE function of mySQL
-try:
-    with DB.cursor() as cursor:
-        cursor.execute('CREATE DATABASE trigg')
- 
-finally:
-    DB.close()
