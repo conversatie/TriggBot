@@ -18,10 +18,7 @@ try:
     with connection.cursor() as cursor:
         cursor.execute('CREATE DATABASE triggers')
  
-finally:
-    connection.close()
-     
-    
-finally:
+ 
+
     connection.close()
 
