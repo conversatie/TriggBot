@@ -17,7 +17,3 @@ connection = pymysql.connect(host='localhost',
 try:
     with connection.cursor() as cursor:
         cursor.execute('CREATE DATABASE triggers')
- 
- 
-
-    connection.close()
