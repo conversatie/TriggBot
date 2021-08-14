@@ -11,7 +11,7 @@ import pymysql.cursors
 
 # Connect to the database
 DB = pymysql.connect(host='localhost',
-                             user='root',
+                             user='test',
                              password='Bucuresti.1',
                              database='triggers',
                              cursorclass=pymysql.cursors.DictCursor)
