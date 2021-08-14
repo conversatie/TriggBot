@@ -3,15 +3,16 @@
 # Pepkobot Copyright © 2018 Il'ya Marshal Semyonov
 # License: https://www.gnu.org/licenses/gpl-3.0.en.html
 import os
+import pymysql.cursors
 
 
 telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN', '1908335294:AAGJDtPL5SyTMQRQonybbB3MlFXyIgkAXbg')
+import pymysql.cursors
 
-DB = {
-    'host': os.environ.get('DB_HOST', 'localhost'),
-    'port': int(os.environ.get('DB_PORT', '3306'),
-    'user': os.environ.get('DB_USER', 'root'),
-    'password': os.environ.get('DB_PASSWORD', 'Bucuresti.1'),
-    'db': os.environ.get('DB_NAME', 'triggers),
-    'charset': 'utf8mb4'
-}
+# Connect to the database
+DB = pymysql.connect(host='localhost',
+                             user='root',
+                             password='Bucuresti.1',
+                             database='triggers',
+                             cursorclass=pymysql.cursors.DictCursor)
+
