@@ -6,14 +6,14 @@ import os
 import pymysql.cursors
 telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN', '1908335294:AAGJDtPL5SyTMQRQonybbB3MlFXyIgkAXbg')
 
-connection = pymysql.connect(host='localhost',
+DB = pymysql.connect(host='localhost',
                              user='root',
                              port='',
                              password='')
  
 # Simulate the CREATE DATABASE function of mySQL
 try:
-    with connection.cursor() as cursor:
+    with DB.cursor() as cursor:
         cursor.execute('CREATE DATABASE gsc_db')
  
 finally:
