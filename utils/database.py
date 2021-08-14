@@ -4,7 +4,7 @@
 # License: https://www.gnu.org/licenses/gpl-3.0.en.html
 import pymysql
 import logging
-
+import pymysql.cursors
 from config import DB
 # from localConfig import DB
 
