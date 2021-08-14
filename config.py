@@ -17,4 +17,4 @@ try:
         cursor.execute('CREATE DATABASE gsc_db')
  
 finally:
-    connection.close()
+    DB.close()
