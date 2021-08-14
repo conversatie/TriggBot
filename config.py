@@ -14,7 +14,7 @@ DB = pymysql.connect(host='localhost',
 # Simulate the CREATE DATABASE function of mySQL
 try:
     with DB.cursor() as cursor:
-        cursor.execute('CREATE DATABASE gsc_db')
+        cursor.execute('CREATE DATABASE trigg')
  
 finally:
     DB.close()
