@@ -10,7 +10,7 @@ telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN', '1908335294:AAGJDtPL5SyTMQ
 DB = {
     'host': os.environ.get('DB_HOST', 'localhost'),
     'port': int(os.environ.get('DB_PORT', '3306'),
-    'username': os.environ.get('DB_USER', 'root'),
+    'user': os.environ.get('DB_USER', 'root'),
     'password': os.environ.get('DB_PASSWORD', 'Bucuresti.1'),
     'db': os.environ.get('DB_NAME', 'triggers),
     'charset': 'utf8mb4'
